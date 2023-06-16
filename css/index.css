@@ -185,3 +185,30 @@ textarea {
   border: none;
   outline: none;
 }
+
+.Header {
+  background-color: aqua;
+}
+.Header .NavBlock .NavBlockSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.Header .NavBlock .NavBlockSection .LogoList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.Header .NavBlock .NavBlockSection .LogoList .LogoListLiSign .LogoSign {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.Header .NavBlock .NavBlockSection .LogoList .LogoListLiSign .LogoSign .CircleOrange {
+  width: 7px;
+  height: 7px;
+  background-color: #DF8928;
+  border-radius: 50%;
+}
+.Header .NavBlock .NavBlockSection .LogoList .LogoName {
+  margin: 30px;
+}

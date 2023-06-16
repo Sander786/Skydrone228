@@ -1,0 +1,27 @@
+.Header{
+    background-color: aqua;
+    .NavBlock{
+        .NavBlockSection{
+            display: flex;
+            .LogoList{
+                display: flex;
+                .LogoListLiSign{
+                    .LogoSign{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        .CircleOrange{
+                            width: 7px;
+                            height: 7px;
+                            background-color: #DF8928;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                .LogoName{
+                    margin: 30px;
+
+                }
+            }
+        }
+    }
+}
