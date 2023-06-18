@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -165,6 +166,7 @@ template {
 * {
   margin: 0;
   padding: 0;
+  font-family: "Raleway", sans-serif !important;
 }
 
 li {
@@ -186,24 +188,50 @@ textarea {
   outline: none;
 }
 
+@media (max-widht: 800px) {
+  .Header {
+    background-position: left;
+  }
+  .Header .NavBlock .NavBlockSection .NavList a {
+    padding: 12px 8px;
+  }
+}
+@media (max-widht: 600px) {
+  .Header {
+    background-position: left;
+  }
+  .Header .NavBlock .NavBlockSection .LogoList {
+    margin: 6px 0;
+  }
+  .Header .NavBlock .NavBlockSection .NavList a {
+    padding: 6px 4px;
+  }
+}
 .Header {
-  background-color: aqua;
+  height: 754px;
+  background-image: url(../assets/img/Header.png);
+  background-position: right;
 }
 .Header .NavBlock {
-  margin-left: 20px;
-  margin-top: 20px;
+  padding: 20px 0;
+  margin: 0 10px;
 }
 .Header .NavBlock .NavBlockSection {
-  display: grid;
-  grid-template-columns: 120px 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .Header .NavBlock .NavBlockSection .LogoList {
+  margin: 12px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0px 5px;
-  border: 1px solid black;
   height: 20px;
+  width: 120px;
 }
 .Header .NavBlock .NavBlockSection .LogoList .LogoListLiSign {
   display: -webkit-box;
@@ -217,6 +245,7 @@ textarea {
   width: 20px;
 }
 .Header .NavBlock .NavBlockSection .LogoList .LogoListLiSign .LogoSign {
+  position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -227,12 +256,156 @@ textarea {
   border-radius: 50%;
 }
 .Header .NavBlock .NavBlockSection .LogoList .LogoName {
-  margin: 2px 10px 0px 5px;
+  margin: 2px 10px 0px 2px;
+  font-weight: bold;
 }
 .Header .NavBlock .NavBlockSection .NavList {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  align-self: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.Header .NavBlock .NavBlockSection .NavList a {
+  padding: 12px 16px;
   -ms-flex-item-align: end;
-      align-self: end;
+      align-self: flex-end;
+  color: #000;
+}
+.Header .HeaderBlock {
+  width: 400px;
+  margin: 140px 20px;
+}
+.Header .HeaderBlock .HeaderBlockTexts {
+  margin-bottom: 20px;
+}
+.Header .HeaderBlock .HeaderBlockTexts p {
+  color: #612B00;
+}
+.Header .HeaderBlock .ContactUs {
+  padding: 12px 16px;
+  background-color: #C4730A;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.Main .MainClientsSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 128px;
+}
+.Main .MainClientsSection .MainClientsList {
+  margin: 48px 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.Main .MainClientsSection .MainClientsList li {
+  height: 184px;
+  width: 184px;
+  margin: 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Main .DownloadAppSection {
+  background-image: -webkit-gradient(linear, right top, left top, from(#B35911), to(#D48C04));
+  background-image: linear-gradient(to left, #B35911, #D48C04);
+}
+.Main .DownloadAppSection .DownloadAppList {
+  padding: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.Main .DownloadAppSection .DownloadAppList .DownloadAppLiInfo {
+  width: 500px;
+}
+.Main .DownloadAppSection .DownloadAppList .DownloadAppLiInfo h2 {
+  color: #FCF6F0;
+  margin-bottom: 8px;
+}
+.Main .DownloadAppSection .DownloadAppList .DownloadAppLiInfo p {
+  color: #FCF6F0;
+  margin-top: 8px;
+}
+.Main .DownloadAppSection .DownloadAppList .DownloadAppLiApps img {
+  margin-left: 16px;
+}
+
+.Footer {
+  background-color: #4B4B4B;
+}
+.Footer .FooterList1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 80px 80px 32px;
+}
+.Footer .FooterList1 .FooterNav .NavSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Footer .FooterList1 .FooterNav .NavSection a {
+  color: #FFFFFF;
+}
+.Footer .FooterList2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 32px 80px 0px;
+  padding-top: 33px;
+  padding-bottom: 80px;
+  border-top: 1px solid #000;
+}
+.Footer .FooterList2 .OtherLinks a {
+  color: #F3F3F3;
+}
+.Footer .FooterList2 .By .IDK {
+  color: #F3F3F3;
 }

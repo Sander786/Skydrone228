@@ -1,0 +1,38 @@
+.Footer{
+    background-color: #4B4B4B;
+    .FooterList1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px 80px 32px;
+
+        .Socail{}
+        .FooterNav{
+            .NavSection{
+                display: flex;
+                flex-direction: column;
+                a{
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .FooterList2{
+        display: flex;
+        justify-content: space-between;
+        margin: 32px 80px 0px;
+        padding-top: 33px;
+        padding-bottom: 80px;
+        border-top: 1px solid #000;
+        .OtherLinks{
+            a{
+                color: #F3F3F3;
+            }        
+        }
+        .By{
+            .IDK{
+                color: #F3F3F3;
+            }
+        }
+    }
+}

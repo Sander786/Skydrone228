@@ -1,16 +1,69 @@
+@media (max-widht: 800px) {
+    .Header{
+        background-position: left;
+        .NavBlock{
+            .NavBlockSection{
+                
+                .NavList{
+                    a{
+                        padding: 12px 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-widht: 600px) {
+    .Header{
+        background-position: left;
+        .NavBlock{
+            .NavBlockSection{
+                .LogoList{
+                    margin: 6px 0;
+                }
+                .NavList{
+                    a{
+                        padding: 6px 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .Header{
-    background-color: aqua;
+    // background-color: aqua;
+    height: 754px;
+    background-image: url(../assets/img/Header.png);
+    background-position: right;
+    // display: flex;
+    // .Elipse{
+    //     position: absolute;
+    //     width: 982.88px;
+    //     height: 982.88px;
+    //     left: -250.21px;
+    //     top: calc(50% - 982.88px/2 + 0px);
+    //     background-color: #FFFFFF;
+    //     border-radius: 50%;
+    // }
     .NavBlock{
-        margin-left: 20px;
-        margin-top: 20px;
+        // position: fixed;
+        padding: 20px 0;
+        margin: 0 10px;
         .NavBlockSection{
-            display: grid;
-            grid-template-columns: 120px 1fr;
+            display: flex;
+            justify-content: space-between;
+            // background-color: blueviolet;
             .LogoList{
+
+                margin: 12px 0;
                 display: flex;
                 padding: 0px 5px ;
-                border: 1px solid black;
+                // border: 1px solid black;
+                
                 height: 20px;
+                width: 120px;
                 .LogoListLiSign{
                     display: flex;
                     align-items: center;
@@ -18,6 +71,7 @@
                     width: 20px;
                     
                     .LogoSign{
+                        position: absolute;
                         display: grid;
                         grid-template-columns: 1fr 1fr;
                         .CircleOrange{
@@ -29,14 +83,51 @@
                     }
                 }
                 .LogoName{
-                    margin: 2px 10px 0px 5px;
+                    margin: 2px 10px 0px 2px;
+                    font-weight: bold;
 
                 }
             }
             .NavList{
+                align-self: flex-end;                 
                 display: flex;
+                flex-direction: row;
                 align-self: end;
+                justify-content: end;
+                
+                
+                a{
+                    padding: 12px 16px;
+                    align-self: flex-end;
+                    color: #000;
+
+                    // background-color: #DF8928;
+                }
+                // .ContactUs{
+                //     background-color: #C4730A;
+                //     color: #FFFFFF;
+                //     border-radius: 4px;
+                // }
             }
         }
     }
+    .HeaderBlock{
+        // position: absolute;
+        width: 400px;
+        margin: 140px 20px;
+        .HeaderBlockTexts{
+            // border: 1px solid #000;
+            margin-bottom: 20px;
+            p{
+                color: #612B00;
+            }
+        }
+        .ContactUs{
+            padding: 12px 16px;
+            background-color: #C4730A;
+            color: #FFFFFF;
+            border-radius: 4px;
+        }
+    }
 }
+

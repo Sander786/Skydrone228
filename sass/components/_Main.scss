@@ -1,0 +1,51 @@
+.Main{
+    .MainClientsSection{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+
+        margin-top: 128px;
+        
+        .MainClientsList{
+            margin: 48px 64px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            li{
+                height: 184px;
+                width: 184px;
+                // border: 1px solid black;
+                margin: 20px 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+    }
+    .DownloadAppSection{
+        background-image: linear-gradient(to left, #B35911, #D48C04);
+        .DownloadAppList{
+            padding: 64px;
+            display: flex;
+            justify-content: space-between;
+            .DownloadAppLiInfo{
+                width: 500px;
+                h2{
+                    color: #FCF6F0;
+                    margin-bottom: 8px;
+                }
+                p{
+                    color: #FCF6F0;
+                    margin-top: 8px;
+                }
+            }
+            .DownloadAppLiApps{
+                img{
+                    margin-left: 16px;
+                }
+            }
+        }
+    }
+}
