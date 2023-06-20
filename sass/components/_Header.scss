@@ -1,4 +1,4 @@
-@media (max-widht: 800px) {
+@media screen and (max-widht: 800px) {
     .Header{
         background-position: left;
         .NavBlock{
@@ -14,7 +14,7 @@
     }
 }
 
-@media (max-widht: 600px) {
+@media screen and (max-widht: 600px) {
     .Header{
         background-position: left;
         .NavBlock{
