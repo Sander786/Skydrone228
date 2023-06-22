@@ -1,36 +1,3 @@
-@media screen and (max-width: 800px) {
-    .Header{
-        background-position: left;
-        .NavBlock{
-            .NavBlockSection{
-                
-                .NavList{
-                    a{
-                        padding: 12px 8px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .Header{
-        background-position: left;
-        .NavBlock{
-            .NavBlockSection{
-                .LogoList{
-                    margin: 6px 0;
-                }
-                .NavList{
-                    a{
-                        padding: 6px 4px;
-                    }
-                }
-            }
-        }
-    }
-}
 
 .Header{
     // background-color: aqua;
