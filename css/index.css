@@ -188,28 +188,9 @@ textarea {
   outline: none;
 }
 
-@media (max-widht: 800px) {
-  .Header {
-    background-position: left;
-  }
-  .Header .NavBlock .NavBlockSection .NavList a {
-    padding: 12px 8px;
-  }
-}
-@media (max-widht: 600px) {
-  .Header {
-    background-position: left;
-  }
-  .Header .NavBlock .NavBlockSection .LogoList {
-    margin: 6px 0;
-  }
-  .Header .NavBlock .NavBlockSection .NavList a {
-    padding: 6px 4px;
-  }
-}
 .Header {
   height: 754px;
-  background-image: url(../assets/img/Header.png);
+  background-image: url(../assets/img/HeaderBig.png);
   background-position: right;
 }
 .Header .NavBlock {
@@ -297,6 +278,104 @@ textarea {
   border-radius: 4px;
 }
 
+.Header2 .NavBlock2 {
+  padding: 20px 0;
+  margin: 0 10px;
+}
+.Header2 .NavBlock2 .NavBlockSection2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.Header2 .NavBlock2 .NavBlockSection2 .LogoList2 {
+  margin: 12px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 5px;
+  height: 20px;
+  width: 120px;
+}
+.Header2 .NavBlock2 .NavBlockSection2 .LogoList2 .LogoListLiSign2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 20px;
+}
+.Header2 .NavBlock2 .NavBlockSection2 .LogoList2 .LogoListLiSign2 .LogoSign2 {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.Header2 .NavBlock2 .NavBlockSection2 .LogoList2 .LogoListLiSign2 .LogoSign2 .CircleOrange2 {
+  width: 7px;
+  height: 7px;
+  background-color: #DF8928;
+  border-radius: 50%;
+}
+.Header2 .NavBlock2 .NavBlockSection2 .LogoList2 .LogoName {
+  margin: 2px 10px 0px 2px;
+  font-weight: bold;
+}
+.Header2 .NavBlock2 .NavBlockSection2 .NavList2 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  align-self: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.Header2 .NavBlock2 .NavBlockSection2 .NavList2 a {
+  padding: 12px 16px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #000;
+}
+
+@media screen and (max-width: 800px) {
+  .Header {
+    background-position: left;
+  }
+  .Header .NavBlock .NavBlockSection .NavList a {
+    padding: 12px 8px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Header {
+    background-position: left;
+  }
+  .Header .NavBlock .NavBlockSection .LogoList {
+    margin: 6px 0;
+  }
+  .Header .NavBlock .NavBlockSection .NavList a {
+    padding: 6px 4px;
+  }
+  .Header .NavBlock .NavBlockSection .NavList .Clients,
+  .Header .NavBlock .NavBlockSection .NavList .DownloadApp {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  .Header .HeaderBlock {
+    width: 300px;
+    margin-left: 15px;
+  }
+}
 .Main .MainClientsSection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -310,6 +389,9 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 128px;
+}
+.Main .MainClientsSection h4 {
+  text-align: center;
 }
 .Main .MainClientsSection .MainClientsList {
   margin: 48px 64px;
@@ -364,6 +446,184 @@ textarea {
   margin-left: 16px;
 }
 
+.Main2 .S1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 24px 64px 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.Main2 .S1 .Main_img1 {
+  width: 600px;
+  height: 600px;
+}
+.Main2 .S1 .S1List {
+  width: 600px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.Main2 .S1 .S1List .S1HighWords {
+  margin-bottom: 16px;
+}
+.Main2 .S1 .S1List .S1HighWords h4 {
+  color: #DF8928;
+  margin-bottom: 24px;
+}
+.Main2 .S1 .S1List .S1Content {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.Main2 .S1 .S1List .S1Content .Content1 {
+  margin-right: 12px;
+}
+.Main2 .S1 .S1List .S1Content .Content1 .Reason {
+  margin: 16px 0px;
+}
+.Main2 .S1 .S1List .S1Content .Content2 {
+  margin-left: 12px;
+}
+.Main2 .S1 .S1List .S1Content .Content2 .Reason {
+  margin: 16px 0px;
+}
+.Main2 .S2 .S2List {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 88px 24px;
+}
+.Main2 .S2 .S2List .S2Content {
+  margin: 24px;
+  width: 400px;
+}
+.Main2 .S2 .S2List .S2Content .Avatar .AvatarContent {
+  margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Main2 .S2 .S2List .S2Content .Avatar .AvatarContent .AvatarImg {
+  height: 56px;
+  width: 56px;
+  margin-bottom: 8px;
+}
+.Main2 .S2 .S2List .S2Content .Avatar .AvatarContent .AvatarContentList {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Main2 .S2 .S2List .S2Content .Avatar .AvatarContent .AvatarContentList .AvatarName .AvatarNameP {
+  font-weight: bold;
+}
+.Main2 .S2 .S2List .S2Content .AvatarInfo {
+  margin-top: 12px;
+}
+.Main2 .S2 .S2List .S2Content .AvatarInfo p {
+  text-align: center;
+}
+.Main2 .S3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 24px 64px 64px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.Main2 .S3 .S3List {
+  width: 600px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.Main2 .S3 .S3List .S3HighWords {
+  margin-bottom: 16px;
+}
+.Main2 .S3 .S3List .S3HighWords h4 {
+  color: #DF8928;
+  margin-bottom: 24px;
+}
+.Main2 .S3 .S3List .S3Content {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.Main2 .S3 .S3List .S3Content .Content3 {
+  margin-right: 12px;
+}
+.Main2 .S3 .S3List .S3Content .Content3 .Reason {
+  margin: 16px 0px;
+}
+.Main2 .S3 .S3List .S3Content .Content4 {
+  margin-left: 12px;
+}
+.Main2 .S3 .S3List .S3Content .Content4 .Reason {
+  margin: 16px 0px;
+}
+.Main2 .S3 .Main_img2 {
+  width: 600px;
+  height: 600px;
+}
+
+@media screen and (max-width: 800px) {
+  .Main .MainClientsSection {
+    margin-top: 64px;
+  }
+  .Main .MainClientsSection .MainClientsList li {
+    height: 124px;
+    margin: 10px 10px;
+  }
+  .Main .DownloadAppSection .DownloadAppList {
+    padding: 48px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Main .MainClientsSection {
+    margin-top: 32px;
+  }
+  .Main .MainClientsSection .MainClientsList li {
+    height: 64px;
+    margin: 10px 10px;
+  }
+  .Main .DownloadAppSection .DownloadAppList {
+    padding: 48px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .Main .DownloadAppSection .DownloadAppList .DownloadAppLiInfo h2 {
+    text-align: center;
+  }
+  .Main .DownloadAppSection .DownloadAppList .DownloadAppLiInfo p {
+    text-align: center;
+  }
+  .Main .DownloadAppSection .DownloadAppList .DownloadAppLiApps img {
+    margin: 0;
+  }
+}
 .Footer {
   background-color: #4B4B4B;
 }
@@ -400,7 +660,7 @@ textarea {
           justify-content: space-between;
   margin: 32px 80px 0px;
   padding-top: 33px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
   border-top: 1px solid #000;
 }
 .Footer .FooterList2 .OtherLinks a {

@@ -29,8 +29,18 @@
                     a{
                         padding: 6px 4px;
                     }
+                    .Clients,
+                    .DownloadApp{
+                        width: 0;
+                        height: 0;
+                        opacity: 0;
+                    }
                 }
             }
+        }
+        .HeaderBlock{
+            width: 300px;
+            margin-left: 15px;
         }
     }
 }

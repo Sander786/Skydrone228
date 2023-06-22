@@ -1,2 +1,58 @@
 @import "./Main/Main1";
 @import "./Main/Main2";
+
+@media screen and (max-width: 800px) {
+    .Main{
+        .MainClientsSection{
+            margin-top: 64px;
+            .MainClientsList{
+                li{
+                    height: 124px;
+                    margin: 10px 10px;
+                }
+    
+            }
+        }
+        .DownloadAppSection{
+            .DownloadAppList{
+                padding: 48px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .Main{
+        .MainClientsSection{
+            margin-top: 32px;
+            .MainClientsList{
+                li{
+                    height: 64px;
+                    margin: 10px 10px;
+                }
+    
+            }
+        }
+        .DownloadAppSection{
+            .DownloadAppList{
+                padding: 48px;
+                flex-wrap: wrap;
+                .DownloadAppLiInfo{
+                    h2{
+                        text-align: center;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                }
+                .DownloadAppLiApps{
+                    
+                    img{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
