@@ -1,6 +1,62 @@
 @import "./Main/Main1";
 @import "./Main/Main2";
 
+@media screen and (max-width: 1200px) {
+    .Main2{
+        .S1{
+            margin: 16px 32px 0px;
+            .Main_img1{
+                width: 500px;
+                height: 500px;
+            }
+            .S1List{
+                .S1HighWords{
+                    margin-bottom: 24px;
+                    h4{
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+        }
+        
+        .S3{
+            margin: 16px 32px 48px;
+            .S3List{
+                .S3HighWords{
+                    margin-bottom: 24px;
+                    h4{
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+            .Main_img2{
+                width: 500px;
+                height: 500px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .Main2{
+        .S1{
+            .Main_img1{
+                width: 450px;
+                height: 450px;
+            }
+            margin: 8px 16px 0px;
+        }
+        
+        .S3{
+            margin: 8px 16px 24px;
+            .Main_img2{
+                width: 450px;
+                height: 450px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 800px) {
     .Main{
         .MainClientsSection{
@@ -16,6 +72,58 @@
         .DownloadAppSection{
             .DownloadAppList{
                 padding: 48px;
+                .DownloadAppLiApps{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    // align-items: center;
+                    img{
+                        margin: 0;
+                        align-self: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .Main2{
+        .S1{
+            margin: 16px 32px 0px;
+            flex-direction: column;
+            align-items: center;
+            .Main_img1{
+                width: 570px;
+                height: 550px;
+                margin-bottom: 48px;
+            }
+            .S1List{
+                width: 570px;
+                .S1HighWords{
+                    margin-bottom: 24px;
+                    h4{
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+        }
+        
+        .S3{
+            margin: 16px 32px 48px;
+            flex-direction: column;
+            align-items: center;
+            .S3List{
+                width: 570px;
+                .S3HighWords{
+                    margin-bottom: 24px;
+                    h4{
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+            .Main_img2{
+                width: 570px;
+                height: 570px;
+                margin-top: 48px;
             }
         }
     }
@@ -36,20 +144,32 @@
         }
         .DownloadAppSection{
             .DownloadAppList{
-                padding: 48px;
-                flex-wrap: wrap;
+                padding: 48px 0px;
+                width: 70%;
+                margin-left: 15%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 .DownloadAppLiInfo{
                     h2{
                         text-align: center;
                     }
                     p{
                         text-align: center;
+                        width: 70%;
+                        margin-left: 15%;
                     }
                 }
                 .DownloadAppLiApps{
-                    
+                    margin-top: 28px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    // align-items: center;
                     img{
                         margin: 0;
+                        margin-top: 8px;
+                        align-self: center;
                     }
                 }
             }
