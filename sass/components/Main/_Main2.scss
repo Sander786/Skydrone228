@@ -23,12 +23,18 @@
                 display: flex;
                 .Content1{
                     margin-right: 12px;
+                    .Elipse1{
+                        margin-left: 8px;
+                    }
                     .Reason{
                         margin: 16px 0px;
                     }
                 }
                 .Content2{
                     margin-left: 12px;
+                    .Elipse2{
+                        margin-left: 8px;
+                    }
                     .Reason{
                         margin: 16px 0px;
                     }
@@ -41,11 +47,12 @@
 
         .S2List{
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             margin: 88px 24px;
+            flex-wrap: wrap;
             .S2Content{
                 margin: 24px;
-                width: 400px;
+                width: 350px;
                 .Avatar{
                     .AvatarContent{
                         margin-bottom: 12px;
@@ -102,12 +109,18 @@
                 display: flex;
                 .Content3{
                     margin-right: 12px;
+                    .Elipse3{
+                        margin-left: 8px;
+                    }
                     .Reason{
                         margin: 16px 0px;
                     }
                 }
                 .Content4{
                     margin-left: 12px;
+                    .Elipse4{
+                        margin-left: 8px;
+                    }
                     .Reason{
                         margin: 16px 0px;
                     }

@@ -33,6 +33,7 @@
         .By{
             .IDK{
                 color: #F3F3F3;
+                text-align: center;
             }
         }
     }
@@ -72,11 +73,22 @@
     }
 }
 
+@media screen and (max-width: 612px) {
+    .Footer{
+        .FooterList1{
+            padding: 80px 60px 32px;
+        }
+    }
+}
+
+
 @media screen and (max-width: 600px) {
     .Footer{
         .FooterList1{
             flex-direction: column;
-
+            padding: 60px 40px 24px;
+            justify-content: center;
+            align-items: center;
             .Social{
                 display: flex;
                 margin-bottom: 36px;
@@ -94,6 +106,7 @@
         }
 
         .FooterList2{
+            margin: 24px 40px 0px;
             .OtherLinks{
                 display: flex;
                 flex-direction: column;
@@ -106,6 +119,17 @@
             .By{
                 margin-top: 24px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Footer{
+        .FooterList1{
+            padding: 40px 20px 16px;
+        }
+        .FooterList2{
+            padding: 16px 20px 32px;
         }
     }
 }

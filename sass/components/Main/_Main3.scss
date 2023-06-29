@@ -1,0 +1,26 @@
+.Main3{
+    h1{
+        margin: 32px 64px 24px;
+        font-weight: bold;
+    }
+    .ContactSection{
+        margin: 24px 64px 160px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .ContactList{
+            .ContactInfo{
+                margin-bottom: 40px;
+                img{
+                    margin-bottom: 16px;
+                }
+                .Info{
+                    h3{
+                        margin-bottom: 8px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
