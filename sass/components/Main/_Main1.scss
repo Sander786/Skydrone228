@@ -1,10 +1,14 @@
+@mixin MFlexCenterCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .Main{
 
     .MainClientsSection{
-        display: flex;
+        @include MFlexCenterCenter;
         flex-direction: column;
-        justify-self: center;
-        align-items: center;
 
         margin-top: 128px;
         h4{
@@ -20,11 +24,8 @@
                 width: 184px;
                 // border: 1px solid black;
                 margin: 20px 40px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include MFlexCenterCenter;
             }
-
         }
     }
     .DownloadAppSection{
@@ -36,11 +37,11 @@
             .DownloadAppLiInfo{
                 width: 500px;
                 h2{
-                    color: #FCF6F0;
+                    color: var(--white-download-color);
                     margin-bottom: 8px;
                 }
                 p{
-                    color: #FCF6F0;
+                    color: var(--white-download-color);
                     margin-top: 8px;
                 }
             }

@@ -1,9 +1,20 @@
+@mixin FlexBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin FColumnCenterCenter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .Footer{
-    background-color: #4B4B4B;
+    background-color: var(--grey-footer-color);
     .FooterList1{
-        display: flex;
+        @include FlexBetween;
         align-items: center;
-        justify-content: space-between;
         padding: 80px 80px 32px;
 
 
@@ -12,27 +23,26 @@
                 display: flex;
                 flex-direction: column;
                 a{
-                    color: #FFFFFF;
+                    color: var(--F6-white-color);
                     font-weight: bolder;
                 }
             }
         }
     }
     .FooterList2{
-        display: flex;
-        justify-content: space-between;
+        @include FlexBetween;
         margin: 32px 80px 0px;
         padding-top: 33px;
         padding-bottom: 60px;
-        border-top: 1px solid #000;
+        border-top: 1px solid var(--total-black-color);
         .OtherLinks{
             a{
-                color: #F3F3F3;
+                color: var(--footer-List2-color);
             }        
         }
         .By{
             .IDK{
-                color: #F3F3F3;
+                color: var(--footer-List2-color);
                 text-align: center;
             }
         }
@@ -57,9 +67,7 @@
         }
 
         .FooterList2{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include FColumnCenterCenter;
             .OtherLinks{
                 display: flex;
                 .TermsOfService{
@@ -85,10 +93,8 @@
 @media screen and (max-width: 600px) {
     .Footer{
         .FooterList1{
-            flex-direction: column;
+            @include FColumnCenterCenter;
             padding: 60px 40px 24px;
-            justify-content: center;
-            align-items: center;
             .Social{
                 display: flex;
                 margin-bottom: 36px;
@@ -109,9 +115,7 @@
             margin: 24px 40px 0px;
             .OtherLinks{
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include FColumnCenterCenter;
                 .TermsOfService{
                     margin: 24px 0px;
                 }

@@ -188,6 +188,17 @@ textarea {
   outline: none;
 }
 
+:root {
+  --orange-elipse-color: #DF8928;
+  --footer-List2-color: #F3F3F3;
+  --total-black-color: #000;
+  --F6-white-color: #FFFFFF;
+  --orange-button-color: #C4730A;
+  --brown-header-color: #612B00;
+  --white-download-color: #FCF6F0;
+  --grey-footer-color: #4B4B4B;
+}
+
 .Header {
   height: 754px;
   background-image: url(../assets/img/HeaderBig.png);
@@ -233,7 +244,7 @@ textarea {
 .Header .NavBlock .NavBlockSection .LogoList .LogoListLiSign .LogoSign .CircleOrange {
   width: 7px;
   height: 7px;
-  background-color: #DF8928;
+  background-color: var(--orange-elipse-color);
   border-radius: 50%;
 }
 .Header .NavBlock .NavBlockSection .LogoList .LogoName {
@@ -259,7 +270,7 @@ textarea {
   padding: 12px 16px;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  color: #000;
+  color: var(--total-black-color);
 }
 .Header .HeaderBlock {
   width: 400px;
@@ -269,12 +280,12 @@ textarea {
   margin-bottom: 20px;
 }
 .Header .HeaderBlock .HeaderBlockTexts p {
-  color: #612B00;
+  color: var(--brown-header-color);
 }
 .Header .HeaderBlock .ContactUs {
   padding: 12px 16px;
-  background-color: #C4730A;
-  color: #FFFFFF;
+  background-color: var(--orange-button-color);
+  color: var(--F6-white-color);
   border-radius: 4px;
 }
 
@@ -318,7 +329,7 @@ textarea {
 .Header2 .NavBlock2 .NavBlockSection2 .LogoList2 .LogoListLiSign2 .LogoSign2 .CircleOrange2 {
   width: 7px;
   height: 7px;
-  background-color: #DF8928;
+  background-color: var(--orange-elipse-color);
   border-radius: 50%;
 }
 .Header2 .NavBlock2 .NavBlockSection2 .LogoList2 .LogoName {
@@ -344,7 +355,7 @@ textarea {
   padding: 12px 16px;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  color: #000;
+  color: var(--total-black-color);
 }
 
 @media screen and (max-width: 800px) {
@@ -404,14 +415,16 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  justify-self: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 128px;
 }
 .Main .MainClientsSection h4 {
@@ -459,11 +472,11 @@ textarea {
   width: 500px;
 }
 .Main .DownloadAppSection .DownloadAppList .DownloadAppLiInfo h2 {
-  color: #FCF6F0;
+  color: var(--white-download-color);
   margin-bottom: 8px;
 }
 .Main .DownloadAppSection .DownloadAppList .DownloadAppLiInfo p {
-  color: #FCF6F0;
+  color: var(--white-download-color);
   margin-top: 8px;
 }
 .Main .DownloadAppSection .DownloadAppList .DownloadAppLiApps img {
@@ -474,10 +487,10 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 24px 64px 0px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 24px 64px 0px;
 }
 .Main2 .S1 .Main_img1 {
   width: 600px;
@@ -492,7 +505,7 @@ textarea {
   margin-bottom: 16px;
 }
 .Main2 .S1 .S1List .S1HighWords h4 {
-  color: #DF8928;
+  color: var(--orange-elipse-color);
   margin-bottom: 24px;
 }
 .Main2 .S1 .S1List .S1Content {
@@ -543,12 +556,12 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .Main2 .S2 .S2List .S2Content .Avatar .AvatarContent .AvatarImg {
   height: 56px;
@@ -595,7 +608,7 @@ textarea {
   margin-bottom: 16px;
 }
 .Main2 .S3 .S3List .S3HighWords h4 {
-  color: #DF8928;
+  color: var(--orange-elipse-color);
   margin-bottom: 24px;
 }
 .Main2 .S3 .S3List .S3Content {
@@ -741,8 +754,8 @@ textarea {
             align-items: center;
   }
   .Main2 .S1 .Main_img1 {
-    width: 570px;
-    height: 550px;
+    width: 500px;
+    height: 500px;
     margin-bottom: 48px;
   }
   .Main2 .S1 .S1List {
@@ -774,8 +787,8 @@ textarea {
     margin-bottom: 12px;
   }
   .Main2 .S3 .Main_img2 {
-    width: 570px;
-    height: 570px;
+    width: 500px;
+    height: 500px;
     margin-top: 48px;
   }
   .Main3 .ContactSection {
@@ -843,7 +856,7 @@ textarea {
     margin: 16px 32px 0px;
   }
   .Main2 .S1 .Main_img1 {
-    width: 470px;
+    width: 460px;
     height: 460px;
     margin-bottom: 24px;
   }
@@ -943,18 +956,18 @@ textarea {
   }
 }
 .Footer {
-  background-color: #4B4B4B;
+  background-color: var(--grey-footer-color);
 }
 .Footer .FooterList1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 80px 80px 32px;
 }
 .Footer .FooterList1 .FooterNav .NavSection {
@@ -967,7 +980,7 @@ textarea {
           flex-direction: column;
 }
 .Footer .FooterList1 .FooterNav .NavSection a {
-  color: #FFFFFF;
+  color: var(--F6-white-color);
   font-weight: bolder;
 }
 .Footer .FooterList2 {
@@ -980,13 +993,13 @@ textarea {
   margin: 32px 80px 0px;
   padding-top: 33px;
   padding-bottom: 60px;
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--total-black-color);
 }
 .Footer .FooterList2 .OtherLinks a {
-  color: #F3F3F3;
+  color: var(--footer-List2-color);
 }
 .Footer .FooterList2 .By .IDK {
-  color: #F3F3F3;
+  color: var(--footer-List2-color);
   text-align: center;
 }
 
@@ -1047,13 +1060,13 @@ textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 60px 40px 24px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 60px 40px 24px;
   }
   .Footer .FooterList1 .Social {
     display: -webkit-box;

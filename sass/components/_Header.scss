@@ -1,6 +1,16 @@
 @import "./Header/Header1";
 @import "./Header/Header2";
 
+@mixin HColumnCenterCenter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin HTextCenter {
+    text-align: center;
+}
+
 @media screen and (max-width: 800px) {
     .Header{
         background-position: left;
@@ -44,16 +54,14 @@
             margin-left: 15%;
             padding: 140px 0px;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include HColumnCenterCenter;
             .HeaderBlockTexts{
                 // width: 400px;
                 h1{
-                    text-align: center;
+                    @include HTextCenter;
                 }
                 p{
-                    text-align: center;
+                    @include HTextCenter;
                 }
             }
             .ContactUs{

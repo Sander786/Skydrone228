@@ -2,13 +2,45 @@
 @import "./Main/Main2";
 @import "./Main/Main3";
 
+@mixin ImgWidthHeight500 {
+    width: 500px;
+    height: 500px;
+}
+
+@mixin ImgWidthHeight450 {
+    width: 450px;
+    height: 450px;
+}
+
+@mixin ImgWidthHeight570 {
+    width: 570px;
+    height: 570px;
+}
+
+@mixin ImgWidthHeight460 {
+    width: 460px;
+    height: 460px;
+}
+
+@mixin ImgWidthHeight350 {
+    width: 350px;
+    height: 350px;
+}
+
+@mixin ImgWidthHeight290 {
+    width: 290px;
+    height: 290px;
+}
+
+
+
+
 @media screen and (max-width: 1200px) {
     .Main2{
         .S1{
             margin: 16px 32px 0px;
             .Main_img1{
-                width: 500px;
-                height: 500px;
+                @include ImgWidthHeight500;
             }
             .S1List{
                 .S1HighWords{
@@ -31,8 +63,7 @@
                 }
             }
             .Main_img2{
-                width: 500px;
-                height: 500px;
+                @include ImgWidthHeight500;
             }
         }
     }
@@ -42,8 +73,7 @@
     .Main2{
         .S1{
             .Main_img1{
-                width: 450px;
-                height: 450px;
+                @include ImgWidthHeight450;
             }
             margin: 8px 16px 0px;
         }
@@ -51,8 +81,7 @@
         .S3{
             margin: 8px 16px 24px;
             .Main_img2{
-                width: 450px;
-                height: 450px;
+                @include ImgWidthHeight450;
             }
         }
     }
@@ -102,8 +131,7 @@
             flex-direction: column;
             align-items: center;
             .Main_img1{
-                width: 570px;
-                height: 550px;
+                @include ImgWidthHeight500;
                 margin-bottom: 48px;
             }
             .S1List{
@@ -131,8 +159,7 @@
                 }
             }
             .Main_img2{
-                width: 570px;
-                height: 570px;
+                @include ImgWidthHeight500;
                 margin-top: 48px;
             }
         }
@@ -199,8 +226,7 @@
         .S1{
             margin: 16px 32px 0px;
             .Main_img1{
-                width: 470px;
-                height: 460px;
+                @include ImgWidthHeight460;
                 margin-bottom: 24px;
             }
             .S1List{
@@ -241,8 +267,7 @@
 
             }
             .Main_img2{
-                width: 460px;
-                height: 460px;
+                @include ImgWidthHeight460;
                 margin-top: 24px;
             }
         }
@@ -262,8 +287,7 @@
     .Main2{
         .S1{
             .Main_img1{
-                width: 350px;
-                height: 350px;
+                @include ImgWidthHeight350;
             }
             .S1List{
                 width: 350px;
@@ -275,8 +299,7 @@
                 width: 350px;
             }
             .Main_img2{
-                width: 350px;
-                height: 350px;
+                @include ImgWidthHeight350;
             }
         }
     }
@@ -295,8 +318,7 @@
     .Main2{
         .S1{
             .Main_img1{
-                width: 290px;
-                height: 290px;
+                @include ImgWidthHeight290;
             }
             .S1List{
                 width: 290px;
@@ -308,8 +330,7 @@
                 width: 290px;
             }
             .Main_img2{
-                width: 290px;
-                height: 290px;
+                @include ImgWidthHeight290;
             }
         }
     }
